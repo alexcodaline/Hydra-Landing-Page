@@ -1,0 +1,184 @@
+/* Header.scss */
+.header {
+  padding-top: 50px;
+}
+.header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15px;
+  a {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    width: 102px;
+    height: 103px;
+    transition: all 0.3s ease;
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .logoName {
+    width: 76px;
+    height: 46px;
+    &:hover {
+      color: #c0b7e8;
+      transform: scale(1.1);
+    }
+  }
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  column-gap: 130px;
+}
+.nav__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  column-gap: 41px;
+  li {
+    transition: all 0.3s ease;
+    &:hover {
+      color: #c0b7e8;
+      transform: scale(1.3);
+    }
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      &:hover {
+        color: #c0b7e8;
+      }
+    }
+  }
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 40px;
+  z-index: 99;
+  column-gap: 39px;
+  .contacts-button {
+    text-transform: uppercase;
+    color: #fff;
+    padding: 17px 39px;
+    border: 2px solid #fff;
+    &:hover {
+      background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+      border: 2px solid #343045;
+      color: #343045;
+    }
+  }
+  .join-button {
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+    color: #343045;
+    padding: 17px 39px;
+    border: 2px solid #343045;
+    &:hover {
+      border: 2px solid #fff;
+      background: none;
+      color: #fff;
+    }
+  }
+}
+.burgerBtn {
+  display: none;
+}
+// // // // // // // // // // // // Phone styles // // // // // // // // //
+@media (max-width: 767px) {
+  .header {
+    margin-top: 25px;
+    padding: 0;
+    
+  }
+  .header__row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 99;
+    .header-logo {
+      display: flex;
+      flex-direction: row;
+      a {
+        column-gap: 11px;
+      }
+    }
+  }
+  .burgerBtn {
+    display: block;
+    margin-left:auto;
+    position: relative;
+  }
+  .nav {
+    display: none;
+  }
+  .nav.active {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    display: flex;
+    flex-direction: column;
+    animation: burgerAnim 0.5s ease-in-out;
+    height: max-content;
+    row-gap: 10px;
+    .nav__list,
+    .header-buttons {
+      row-gap: 10px;
+      font-size: 10px;
+      border: none;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+      margin: 0;
+      a {
+        color: #fff;
+      }
+      z-index: 100;
+    }
+    .header-buttons {
+      background: none;
+      padding-top: 0;
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  @keyframes burgerAnim {
+    from {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

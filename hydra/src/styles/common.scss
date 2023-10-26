@@ -1,0 +1,36 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #302c42;
+}
+
+.container-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 84px;
+  animation: animationPage 0.8s ease-in-out;
+}
+
+@keyframes animationPage {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0.6;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px){
+  .container-wrapper {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}

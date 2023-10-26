@@ -1,0 +1,54 @@
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: row;
+}
+.preloader__logo {
+  animation: animateLogo 1s ease-in-out;
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@keyframes animateLogo {
+  from {
+    transform: translateX(200%) rotate(180deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0.6;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.preloader__name {
+  animation: animateName 1s ease-in-out;
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@keyframes animateName {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0.6;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

@@ -9,6 +9,8 @@ import youtube from "./../../img/socials/youtube.webp";
 import instagram from "./../../img/socials/instagram.webp";
 import pinterest from "./../../img/socials/pinterest.webp";
 import footerLine2 from "./../../img/lines/footerLine2.webp";
+import footer__line_decor from "./../../img/lines/footer__line1.webp";
+import footer__line_decor2 from "./../../img/lines/footer__line2.webp";
 export default function Footer() {
   return (
     <footer className="footer">
@@ -18,6 +20,10 @@ export default function Footer() {
             <a href="/home">
               <img src={footerLogo} alt="Logo" />
             </a>
+          </div>
+          <div className="footer__logo_lines">
+            <img src={footer__line_decor} alt="background decoration" />
+            <img src={footer__line_decor2} alt="background decoration" />
           </div>
           <div className="footer__line">
             <img src={footerLine} alt="background decoration" />

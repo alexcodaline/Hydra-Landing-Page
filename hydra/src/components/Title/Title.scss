@@ -90,6 +90,7 @@
 
 .title-img {
   position: relative;
+  order: 2;
   .woman {
     z-index: 1;
     position: relative;
@@ -186,6 +187,7 @@
     justify-content: center;
     align-items: center;
     .title-text {
+      order: 2;
       margin-top: 30px;
       display: flex;
       text-align: center;
@@ -223,6 +225,7 @@
       }
     }
     .title-img {
+      order: 1;
       position: relative;
       .woman {
         height: auto;

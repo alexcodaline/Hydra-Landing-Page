@@ -52,7 +52,10 @@ export default function Title() {
         </div>
         <div className="contacts">
           <div className="location">
-            <a href="/location">
+            <a
+               href="https://www.google.com/maps?q=Union+St,Seattle,WA+98101,United+States"
+              target="blank"
+            >
               <div className="contact_info">
                 <img src={location} alt="location" />
                 <div className="info">
@@ -66,7 +69,7 @@ export default function Title() {
             <img src={contactLine} alt="background decoratin" />
           </div>
           <div className="phone">
-            <a href="/location">
+            <a href="tel:+11011111010">
               <div className="contact_info">
                 <img src={phone} alt="phone call" />
                 <div className="info">
@@ -80,7 +83,7 @@ export default function Title() {
             <img src={contactLine} alt="background decoratin" />
           </div>
           <div className="email">
-            <a href="/location">
+            <a href="mailto:contact@HydraVTech.com">
               <div className="contact_info">
                 <img src={email} alt="mail" />
                 <div className="info">

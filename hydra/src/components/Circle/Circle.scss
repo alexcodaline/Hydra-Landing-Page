@@ -152,14 +152,14 @@
     background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
     box-shadow: 0 0 0 12px rgba(14, 14, 14, 0.32);
     position: absolute;
-    top: 90%;
+    top: 85%;
     transform: translateY(-50%);
     z-index: 999;
   }
   .swiper-btn-next-circle {
-    right: 10px;
+    right: 3%;
   }
   .swiper-btn-prev-circle {
-    left: 10px;
+    left: 3%;
   }
 }

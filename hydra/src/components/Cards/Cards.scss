@@ -204,7 +204,7 @@
   }
 }
 .cards-text {
-  width: 652px;
+  width: 50%;
   height: 98px;
   color: #fff;
   font: var(--title-desc);
@@ -227,7 +227,7 @@
   .arrow-card {
     display: none;
   }
-  .cards-info {
+  .cards-info, .card_line {
     display: none;
   }
   .swiper_cards_container {
@@ -333,14 +333,34 @@
   .cards-desc {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 50px;
+
     img {
       width: 190px;
       height: 190px;
     }
-    .cards-text {
-      display: none;
+  }
+  .card__desc {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    .cards-context {
+      span {
+        color: #fff;
+        text-transform: uppercase;
+        font: var(--about--font-bold-media);
+      }
+      p {
+        color: #fff;
+        text-transform: uppercase;
+        font: var(--about--font-light-media);
+      }
     }
+  }
+
+  .cards-text {
+    display: none;
   }
 
   .swiper_tech_container {

@@ -75,7 +75,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="context_text">
+            <div className="context_text_hydra">
               <p>
                 Vitae sapien pellentesque habitant morbi tristique senectus et
                 netus et. Feugiat nibh sed pulvinar proin gravida hendrerit

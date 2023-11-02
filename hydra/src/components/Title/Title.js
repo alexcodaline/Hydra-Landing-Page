@@ -21,7 +21,7 @@ export default function Title() {
             <div className="woman">
               <img src={titleImg} alt="Hydra product" loading="lazy" />
             </div>
-            <div className="lines">
+            <div className="title-lines">
               <img src={line1} alt="background decoratin" />
               <img src={line2} alt="background decoratin" />
               <img src={line3} alt="background decoratin" />

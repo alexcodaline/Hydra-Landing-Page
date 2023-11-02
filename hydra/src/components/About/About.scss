@@ -6,6 +6,7 @@
 }
 .intro,
 .context {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -14,20 +15,15 @@
     span {
       color: #fff;
       text-transform: uppercase;
-      font-size: 36px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
+      font: var(--about-font-large);
     }
     p {
       color: #fff;
       text-transform: uppercase;
-      font-size: 36px;
-      font-style: normal;
-      font-weight: 300;
-      line-height: normal;
+      font: var(--about-font-title);
     }
     .arrow {
+      width: 100%;
       position: relative;
       display: flex;
       flex-direction: row;
@@ -46,13 +42,10 @@
 
   .intro_text,
   .context_text {
-    width: 652px;
+    width: 50%;
     height: 98px;
     color: #fff;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font: var(--title-desc);
   }
 }
 
@@ -60,33 +53,32 @@
   margin-top: 87px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   color: #fff;
   position: relative;
-  column-gap: 108px;
+}
+.man {
   z-index: 99;
-  .man {
+  width: 100%;
+  img {
     width: 524px;
     height: 557px;
-    z-index: 99;
-    img {
-      border-radius: 200px 100px;
-      background: #a3a3a3;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
+    border-radius: 200px 100px;
+    background: #a3a3a3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
-  .lines {
-    z-index: 0;
-    img {
-      position: absolute;
-      top: -15px;
-      left: 0;
-    }
-    img:nth-child(2) {
-      position: absolute;
-      top: 48%;
-      left: 0;
-    }
+}
+.lines {
+  z-index: 0;
+  img {
+    position: absolute;
+    top: -15px;
+    left: 0;
+  }
+  img:nth-child(2) {
+    position: absolute;
+    top: 48%;
+    left: 0;
   }
 }
 
@@ -94,32 +86,23 @@
   padding-top: 47px;
   display: flex;
   flex-direction: column;
+  width: 100%;
   .about-title {
     text-transform: uppercase;
     span {
-      font-size: 36px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
+      font: var(--about-font-large);
     }
     p {
       color: rgba(255, 255, 255, 0.95);
-      font-size: 36px;
-      font-style: normal;
-      font-weight: 300;
-      line-height: normal;
+      font: var(--about-font-title);
     }
   }
 }
 .desk {
-  width: 630px;
   height: 228px;
   margin-top: 42px;
   margin-bottom: 28px;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font: var(--title-desc);
 }
 
 .about-btn {
@@ -129,9 +112,7 @@
   z-index: 99;
   a {
     text-transform: uppercase;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
+    font: var(--btn-font);
     line-height: 15px;
     text-decoration: none;
     color: #343045;
@@ -203,22 +184,21 @@
     justify-content: center;
     align-items: center;
     margin-top: 38px;
-    .man {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: max-content;
-      img {
-        border-radius: 140px 50px;
-        width: 351px;
-        height: 400px;
-        background: #a3a3a3;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-      }
-    }
+  }
+  .man {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: max-content;
+    img {
+      border-radius: 140px 50px;
+      box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.13);
+      width: 336px;
+      height: 358px;
+    }}
+
     .about-desc {
       display: flex;
       margin-top: 50px;
@@ -238,10 +218,7 @@
         height: max-content;
         margin: 0;
         padding: 0 5%;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        font: var(--about-font-text-media);
       }
     }
     .lines {
@@ -251,10 +228,11 @@
       margin-top: 34px;
       justify-content: center;
       a {
+        
+        font: var(--btn-font);
         font-size: 14px;
       }
     }
-  }
   .context {
     display: flex;
     margin-top: 60px;
@@ -262,7 +240,7 @@
     .context-title {
       text-align: center;
       p {
-        padding-top: 16px;
+        font: var(--btn-font);
       }
     }
   }

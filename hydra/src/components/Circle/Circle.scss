@@ -7,9 +7,10 @@
   position: relative;
   z-index: 99;
   position: relative;
+  width: 100%;
   .circleLine {
     position: relative;
-    width: 1300px;
+    width: 100%;
     img {
       position: absolute;
       top: -8%;
@@ -23,13 +24,14 @@
     align-items: center;
     justify-content: space-between;
     z-index: 99;
+    width: 100%;
   }
 
   .circle {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 198px;
+    width: 25%;
     z-index: 99;
     .circle-numb {
       display: flex;
@@ -42,11 +44,7 @@
       box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.13);
       span {
         color: #343045;
-        font-family: Montserrat;
-        font-size: 64px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+        font: var(--circle-font-numb);
       }
     }
 
@@ -56,11 +54,8 @@
       justify-content: center;
       margin-top: 25px;
       color: #fff;
-      width: 250px;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
+      width: 75%;
+      font: var(--contacts-font);
       position: relative;
       &::before {
         content: "";
@@ -74,7 +69,7 @@
     }
   }
   .swiper_circle_container {
-  display: none;
+    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -98,7 +93,7 @@
       position: relative;
     }
   }
-  
+
   .swiper_circle_items {
     display: flex;
     margin-top: 15%;
@@ -146,11 +141,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
     border-radius: 50%;
     background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
-    box-shadow: 0 0 0 12px rgba(14, 14, 14, 0.32);
+    box-shadow: 0 0 0 10px rgba(14, 14, 14, 0.32);
     position: absolute;
     top: 85%;
     transform: translateY(-50%);

@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import Preloader from './components/Preloader/Preloader'; // Імпортуйте компонент прелоадера
-import About from "./components/About/About";
-import Cards from "./components/Cards/Cards";
-import Circle from "./components/Circle/Circle";
-import UserForm from "./components/UserForm/UserForm";
-import Header from "./components/Header/Header";
-import Title from "./components/Title/Title";
-import Footer from "./components/Footer/Footer";
+import React, { useState, useEffect } from "react";
+import Preloader from "./components/Preloader/Preloader.js"; // Імпортуйте компонент прелоадера
+import About from "./components/About/About.js";
+import Cards from "./components/Cards/Cards.js";
+import Circle from "./components/Circle/Circle.js";
+import UserForm from "./components/UserForm/UserForm.js";
+import Header from "./components/Header/Header.js";
+import Title from "./components/Title/Title.js";
+import Footer from "./components/Footer/Footer.js";
 
 function App() {
   const [contentLoaded, setContentLoaded] = useState(false);
@@ -14,11 +14,11 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setContentLoaded(true);
-    }, 2000); 
+    },860);
   }, []);
 
   return (
-    <div className="wrapper">
+    <div>
       {contentLoaded ? (
         <div>
           <Header />

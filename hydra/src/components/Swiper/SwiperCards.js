@@ -68,10 +68,10 @@ export default function SwiperCards() {
           </div>
         </SwiperSlide>
         <div className="swiper-btn-next">
-          <img src={btnNext} alt="Next" />
+          <img src={btnNext} alt="Next" style={{ width: '38px', height: '38px' }}/>
         </div>
         <div className="swiper-btn-prev">
-          <img src={btnPrev} alt="Prev" />
+          <img src={btnPrev} alt="Prev" style={{ width: '38px', height: '38px' }}/>
         </div>
       </Swiper>
     </div>

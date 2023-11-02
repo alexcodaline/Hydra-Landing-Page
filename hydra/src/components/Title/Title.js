@@ -10,7 +10,7 @@ import location from "./../../img/contacts/location.webp";
 import phone from "./../../img/contacts/phone.webp";
 import email from "./../../img/contacts/email.webp";
 import contactLine from "./../../img/lines/contact-line.webp";
-import SwiperContacts from "./../Swiper/SwiperContacts";
+import SwiperContacts from "./../Swiper/SwiperContacts.js";
 
 export default function Title() {
   return (
@@ -19,7 +19,7 @@ export default function Title() {
         <div className="title">
           <div className="title-img">
             <div className="woman">
-              <img src={titleImg} alt="Hydra product" />
+              <img src={titleImg} alt="Hydra product" loading="lazy" />
             </div>
             <div className="lines">
               <img src={line1} alt="background decoratin" />
@@ -53,11 +53,15 @@ export default function Title() {
         <div className="contacts">
           <div className="location">
             <a
-               href="https://www.google.com/maps?q=Union+St,Seattle,WA+98101,United+States"
+              href="https://www.google.com/maps?q=Union+St,Seattle,WA+98101,United+States"
               target="blank"
             >
               <div className="contact_info">
-                <img src={location} alt="location" />
+                <img
+                  src={location}
+                  alt="location"
+                  style={{ width: "72px", height: "72px" }}
+                />
                 <div className="info">
                   <span>Pay Us a Visit</span>
                   <p>Union St, Seattle, WA 98101, United States</p>
@@ -65,13 +69,19 @@ export default function Title() {
               </div>
             </a>
           </div>
-          <div>
-            <img src={contactLine} alt="background decoratin" />
-          </div>
+          <img
+            src={contactLine}
+            alt="background decoratin"
+            style={{ width: "auto", height: "117px" }}
+          />
           <div className="phone">
             <a href="tel:+11011111010">
               <div className="contact_info">
-                <img src={phone} alt="phone call" />
+                <img
+                  src={phone}
+                  alt="phone call"
+                  style={{ width: "59px", height: "59px" }}
+                />
                 <div className="info">
                   <span>Give Us a Call</span>
                   <p>(110) 1111-1010</p>
@@ -79,13 +89,19 @@ export default function Title() {
               </div>
             </a>
           </div>
-          <div>
-            <img src={contactLine} alt="background decoratin" />
-          </div>
+          <img
+            src={contactLine}
+            alt="background decoratin"
+            style={{ width: "auto", height: "117px" }}
+          />
           <div className="email">
             <a href="mailto:contact@HydraVTech.com">
               <div className="contact_info">
-                <img src={email} alt="mail" />
+                <img
+                  src={email}
+                  alt="mail"
+                  style={{ width: "65px", height: "65px" }}
+                />
                 <div className="info">
                   <span>Send Us a Message</span>
                   <p>Contact@HydraVTech.com</p>

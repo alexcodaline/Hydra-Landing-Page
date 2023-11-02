@@ -2,7 +2,7 @@ import React from "react";
 import "./Circle.scss";
 import circleLine from "./../../img/lines/circleLine.webp";
 
-import SwiperCircles from "./../Swiper/SwiperCircles";
+import SwiperCircles from "./../Swiper/SwiperCircles.js";
 
 export default function Circle() {
   return (

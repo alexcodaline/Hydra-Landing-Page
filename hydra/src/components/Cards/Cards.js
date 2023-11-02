@@ -12,8 +12,8 @@ import slide3 from "./../../img/decoration/slide3.webp";
 import slide4 from "./../../img/decoration/slide4.webp";
 import vector from "./../../img/arrows/arrowVector.webp";
 import arrowIntro from "./../../img/arrows/arrowIntro.webp";
-import Swiper from "./../Swiper/SwiperCards";
-import SwiperTech from "./../Swiper/SwiperTech";
+import Swiper from "./../Swiper/SwiperCards.js";
+import SwiperTech from "./../Swiper/SwiperTech.js";
 export default function Cards() {
   const [slideVisible, setSlideVisible] = useState(false);
 
@@ -60,7 +60,7 @@ export default function Cards() {
             <a href="/">TRY IT NOW</a>
           </div>
         </div>
-        <div className="line">
+        <div className="card_line">
           <img src={cardLine} alt="background decoration" />
         </div>
         <div className="slide">
@@ -91,7 +91,7 @@ export default function Cards() {
             </div>
           </div>
         )}
-        <div className="cards-desc">
+        <div className="card__desc">
           <div className="cards-context">
             <span>HOW WE BUILD</span>
             <p>WITH HYDRA VR?</p>

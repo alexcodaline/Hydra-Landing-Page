@@ -8,9 +8,11 @@
   justify-content: space-between;
 }
 .footer__logo {
-  width: 187px;
-  height: 187px;
   animation: spin 2s linear infinite;
+  img {
+    width: 185px;
+    height: 187px;
+  }
 }
 .footer__nav,
 .footer__links {
@@ -22,10 +24,7 @@
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    font: var(--tech-font-text);
     transition: all 0.3s ease;
     &:hover {
       color: #c0b7e8;
@@ -39,10 +38,7 @@
   row-gap: 39px;
   .social__title {
     color: #fff;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    font: var(--tech-font-text);
   }
 }
 .social__links {
@@ -50,6 +46,8 @@
   flex-direction: row;
   column-gap: 20px;
   img {
+    width: 32px;
+    height: 32px;
     transition: all 0.3s ease;
     border: 2px solid #343045;
     border-radius: 50%;
@@ -66,9 +64,7 @@
   z-index: 99;
   a {
     text-transform: uppercase;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
+    font: var(--btn-font);
     line-height: 15px;
     text-decoration: none;
     color: #343045;
@@ -85,6 +81,12 @@
 }
 .footer__line_row {
   padding-top: 77px;
+  width: 100%;
+  height: auto;
+  img {
+    width: auto;
+    height: auto;
+  }
 }
 .footer__logo_lines {
   display: none;
@@ -95,10 +97,7 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font: var(--footer-font-copyright);
   letter-spacing: 1.82px;
 }
 @media (max-width: 767px) {
@@ -123,16 +122,27 @@
         justify-content: center;
       }
     }
+    .footer__logo {
+      img {
+        width: 185px;
+        height: 187px;
+      }
+    }
+
     .footer__logo_lines {
       display: flex;
       flex-direction: column;
       width: 100%;
       position: absolute;
-      top: -25%;
-    
+      top: -15%;
+      img:nth-of-type(1) {
+        width: 100%;
+        height: 100%;
+      }
       img:nth-of-type(2) {
         position: absolute;
         width: 100%;
+        height: 90%;
         top: 70%;
       }
     }
@@ -142,18 +152,17 @@
   .footer__line {
     display: none;
   }
+  .social__links {
+    img {
+      height: 32px;
+      width: 32px;
+    }
+  }
   .copyright {
     padding-top: 38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     color: #fff;
-    width: 100%;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    font: var(--footer-font-copyright);
     letter-spacing: 1.82px;
   }
 }

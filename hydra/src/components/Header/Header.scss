@@ -1,6 +1,7 @@
 /* Header.scss */
 .header {
   padding-top: 50px;
+  width: 100%;
 }
 .header__row {
   display: flex;
@@ -11,17 +12,23 @@
 .header-logo {
   display: flex;
   align-items: center;
-  justify-content: center;
-  column-gap: 15px;
+  justify-content: space-between;
   a {
     display: flex;
     align-items: center;
+    column-gap: 15px;
+  }
+  img {
+    width: 103px;
+    height: 103px;
   }
   .logo {
-    width: 102px;
-    height: 103px;
-    transition: all 0.3s ease;
-    animation: spin 2s linear infinite;
+    img {
+      transition: all 0.3s ease;
+      animation: spin 2s linear infinite;
+      width: 102px;
+      height: 103px;
+    }
   }
   @keyframes spin {
     from {
@@ -32,8 +39,10 @@
     }
   }
   .logoName {
-    width: 76px;
-    height: 46px;
+    img {
+      width: 76px;
+      height: 46px;
+    }
     &:hover {
       color: #c0b7e8;
       transform: scale(1.1);
@@ -50,9 +59,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
+  font: var(--btn-font);
   column-gap: 41px;
   li {
     transition: all 0.3s ease;
@@ -75,9 +82,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
+  font: var(--btn-font);
   text-decoration: none;
   border-radius: 40px;
   z-index: 99;
@@ -114,7 +119,6 @@
   .header {
     margin-top: 25px;
     padding: 0;
-    
   }
   .header__row {
     flex-direction: row;
@@ -132,7 +136,7 @@
   }
   .burgerBtn {
     display: block;
-    margin-left:auto;
+    margin-left: auto;
     position: relative;
   }
   .nav {

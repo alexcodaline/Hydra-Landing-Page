@@ -28,10 +28,6 @@ const validationSchema = Yup.object().shape({
 });
 
 export default function UserForm() {
-  const handleSubmit = (values) => {
-    console.log(values);
-  };
-
   return (
     <section className="form">
       <div className="container-wrapper">
@@ -51,7 +47,6 @@ export default function UserForm() {
                 about: "",
               }}
               validationSchema={validationSchema}
-              onSubmit={handleSubmit}
             >
               {() => (
                 <Form className="form__data">

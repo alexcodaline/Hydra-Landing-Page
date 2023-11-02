@@ -22,7 +22,12 @@ export default function Header() {
                 </div>
               </a>
             </div>
-            <button className="burgerBtn" onClick={() => setIsOpen(!isOpen)}>
+            <button
+              id="burgerBtn"
+              aria-label="Open site navigation"
+              className="burgerBtn"
+              onClick={() => setIsOpen(!isOpen)}
+            >
               <Icon />
             </button>
             <nav className={`nav ${isOpen ? "active" : ""}`}>

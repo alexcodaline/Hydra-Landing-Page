@@ -59,10 +59,10 @@ export default function SwiperCircles() {
           </div>
         </SwiperSlide>
         <div className="swiper-btn-next-circle">
-          <img src={btnNext} alt="Next" />
+          <img src={btnNext} alt="Next" style={{ width: '38px', height: '38px' }}/>
         </div>
         <div className="swiper-btn-prev-circle">
-          <img src={btnPrev} alt="Prev" />
+          <img src={btnPrev} alt="Prev" style={{ width: '38px', height: '38px' }}/>
         </div>
       </Swiper>
     </div>

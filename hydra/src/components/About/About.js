@@ -38,7 +38,7 @@ export default function About() {
               <img src={line2} alt="background decoration" />
             </div>
             <div className="man">
-              <img src={man} alt="Man VR" />
+              <img src={man} alt="Man VR" loading="lazy" fetchpriority="high"/>
             </div>
             <div className="about-desc">
               <div className="about-title">

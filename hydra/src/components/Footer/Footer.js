@@ -26,7 +26,7 @@ export default function Footer() {
             <img src={footer__line_decor2} alt="background decoration" />
           </div>
           <div className="footer__line">
-            <img src={footerLine} alt="background decoration" />
+            <img src={footerLine} alt="background decoration" style={{width :"auto", height : "196px"}} />
           </div>
           <div className="footer__nav">
             <a href="/about">about</a>
@@ -36,7 +36,7 @@ export default function Footer() {
             <a href="/about">JOIN HYDRA</a>
           </div>
           <div className="footer__line">
-            <img src={footerLine} alt="background decoration" />
+            <img src={footerLine} alt="background decoration" style={{width :"auto", height : "196px"}} />
           </div>
           <div className="footer__links">
             <a href="/about">f.a.q</a>
@@ -45,7 +45,7 @@ export default function Footer() {
             <a href="/about">licenses</a>
           </div>
           <div className="footer__line">
-            <img src={footerLine} alt="background decoration" />
+            <img src={footerLine} alt="background decoration" style={{width :"auto", height : "196px"}} />
           </div>
           <div className="social">
             <div className="social__title">
@@ -77,7 +77,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer__line_row">
-          <img src={footerLine2} alt="background decoration" />
+          <img src={footerLine2} alt="background decoration" style={{width:"100%", height:"auto"}} />
         </div>
         <div className="copyright">
           <p>

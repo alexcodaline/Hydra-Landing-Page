@@ -1,5 +1,46 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Montserrat-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/Montserrat-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/Montserrat-Light.woff") format("woff");
+  font-display: swap;
+}
+
+:root {
+  --btn-font: 12px "Montserrat-Bold", sans-serif;
+  --title-text: 46px "Montserrat-Bold", sans-serif;
+  --title-desc: 16px "Montserrat-Regular", sans-serif;
+  --about-desc: 16px "Montserrat-Regular", sans-serif;
+  --contacts-font: 24px "Montserrat-Bold", sans-serif;
+  --contacts-font-info: 14px "Montserrat-Regular", sans-serif;
+  --contacts-font-media: 14px "Montserrat-Regular", sans-serif;
+  --about-font-large: 36px "Montserrat-Bold", sans-serif;
+  --about-font-title: 36px "Montserrat-Light", sans-serif;
+  --about-font-text-media: 14px "Montserrat-Regular", sans-serif;
+  --tech-font-text: 16px "Montserrat-Bold", sans-serif;
+  --tech-font-desc: 24px "Montserrat-Light", sans-serif;
+  --footer-font-copyright: 14px "Montserrat-Bold", sans-serif;
+  --circle-font-numb: 64px "Montserrat-Bold", sans-serif;
+}
+
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #302c42;
 }
 
@@ -27,7 +68,7 @@ body {
   }
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
   .container-wrapper {
     width: 100%;
     padding: 0 20px;

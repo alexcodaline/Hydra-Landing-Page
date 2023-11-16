@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Element } from 'react-scroll';
 import "./Cards.scss";
 import card1 from "./../../img/decoration/card1.webp";
 import card2 from "./../../img/decoration/card2.webp";
@@ -18,9 +19,12 @@ export default function Cards() {
   const [slideVisible, setSlideVisible] = useState(false);
 
   return (
+   
+
     <section className="cards">
       <div className="container-wrapper">
         <Swiper />
+        <Element name="services" className="element">
         <div className="cards-info">
           <div className="cards-desc">
             <img src={card1} alt="simulation" />
@@ -63,6 +67,8 @@ export default function Cards() {
         <div className="card_line">
           <img src={cardLine} alt="background decoration" />
         </div>
+        </Element>
+        <Element name="techno" className="element">
         <div className="slide">
           <span>TECHNOLOGIES & HARDWARE</span>
           <p>USED BY HYDRA VR.</p>
@@ -91,6 +97,7 @@ export default function Cards() {
             </div>
           </div>
         )}
+        </Element>
         <div className="card__desc">
           <div className="cards-context">
             <span>HOW WE BUILD</span>
@@ -114,5 +121,6 @@ export default function Cards() {
         </div>
       </div>
     </section>
+ 
   );
 }

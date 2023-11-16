@@ -229,22 +229,22 @@
         display: flex;
         img {
           top: -25%;
-          left: -5%;
+          left: -6%;
           width: 100%;
-          height: 60vh;
+          height: 190%;
         }
         img:nth-child(2) {
           top: -20%;
           left: 30%;
           width: 80%;
-          height: 65vh;
+          height: 190%;
         }
         img:nth-child(3) {
           position: absolute;
           top: 20%;
           left: 0;
-          width: 78%;
-          height: 50vh;
+          width: 80%;
+          height: 150%;
           transform: rotate(35deg);
         }
         z-index: 0;

@@ -1,4 +1,6 @@
 import React from "react";
+import { Element } from "react-scroll";
+
 import "./UserForm.scss";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
@@ -29,6 +31,7 @@ const validationSchema = Yup.object().shape({
 
 export default function UserForm() {
   return (
+    <Element name="form">
     <section className="form">
       <div className="container-wrapper">
         <div className="form__items">
@@ -142,5 +145,6 @@ export default function UserForm() {
         </div>
       </div>
     </section>
+    </Element>
   );
 }

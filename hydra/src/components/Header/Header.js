@@ -3,6 +3,7 @@ import logo from "./../../img/logo/logo.webp";
 import logoName from "./../../img/logo/logoName.webp";
 import { ReactComponent as Icon } from "./menuIcon.svg";
 import "./Header.scss";
+import { Link } from "react-scroll";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,25 +34,78 @@ export default function Header() {
             <nav className={`nav ${isOpen ? "active" : ""}`}>
               <ul className="nav__list">
                 <li>
-                  <a href="/about">About</a>
+                  <Link
+                    activeClass="active"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    duration={700}
+                    offset={-50}
+                  >
+                    About
+                  </Link>
                 </li>
                 <li>
-                  <a href="/services">Services</a>
+                  <Link
+                    activeClass="active"
+                    to="services"
+                    spy={true}
+                    smooth={true}
+                    duration={700}
+                    offset={-50}
+                  >
+                    Services
+                  </Link>
                 </li>
                 <li>
-                  <a href="/technologies">Technologies</a>
+                  <Link
+                    activeClass="active"
+                    to="techno"
+                    spy={true}
+                    smooth={true}
+                    duration={700}
+                    offset={-50}
+                  >
+                    Technologies
+                  </Link>
                 </li>
                 <li>
-                  <a href="/how-to">How to</a>
+                  <Link
+                    activeClass="active"
+                    to="circles"
+                    spy={true}
+                    smooth={true}
+                    duration={700}
+                    offset={-350}
+                  >
+                    How To
+                  </Link>
                 </li>
               </ul>
               <div className="header-buttons">
-                <a href="/" className="header-buttons contacts-button">
-                  Contact us
-                </a>
-                <a href="/join" className="header-buttons join-button">
-                  Join Hydra
-                </a>
+                <Link
+                  activeClass="active"
+                  to="contacts"
+                  spy={true}
+                  smooth={true}
+                  duration={700}
+                  offset={-90}
+                >
+                  <a href="/" className="header-buttons contacts-button">
+                    Contact us
+                  </a>
+                </Link>
+                <Link
+                  to="form"
+                  spy={true}
+                  smooth={true}
+                  duration={700}
+                  offset={-5}
+                >
+                  <a href="/join" className="header-buttons join-button">
+                    Join Hydra
+                  </a>
+                </Link>
               </div>
             </nav>
           </div>

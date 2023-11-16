@@ -13,7 +13,10 @@ export default function SwiperCircles() {
         modules={[Navigation]}
         slidesPerView={1}
         spaceBetween={8}
-        navigation={{ nextEl: ".swiper-btn-next-circle", prevEl: ".swiper-btn-prev-circle" }}
+        navigation={{
+          nextEl: ".swiper-btn-next-circle",
+          prevEl: ".swiper-btn-prev-circle",
+        }}
         initialSlide={0}
         centeredSlides={true}
         loop={true}
@@ -59,10 +62,18 @@ export default function SwiperCircles() {
           </div>
         </SwiperSlide>
         <div className="swiper-btn-next-circle">
-          <img src={btnNext} alt="Next" style={{ width: '38px', height: '38px' }}/>
+          <img
+            src={btnNext}
+            alt="Next"
+            style={{ width: "38px", height: "38px" }}
+          />
         </div>
         <div className="swiper-btn-prev-circle">
-          <img src={btnPrev} alt="Prev" style={{ width: '38px', height: '38px' }}/>
+          <img
+            src={btnPrev}
+            alt="Prev"
+            style={{ width: "38px", height: "38px" }}
+          />
         </div>
       </Swiper>
     </div>

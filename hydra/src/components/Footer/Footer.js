@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./Footer.scss";
 import footerLogo from "./../../img/logo/footerLogo.webp";
 import footerLine from "./../../img/lines/footerLine.webp";
@@ -26,26 +27,76 @@ export default function Footer() {
             <img src={footer__line_decor2} alt="background decoration" />
           </div>
           <div className="footer__line">
-            <img src={footerLine} alt="background decoration" style={{width :"auto", height : "196px"}} />
+            <img
+              src={footerLine}
+              alt="background decoration"
+              style={{ width: "auto", height: "196px" }}
+            />
           </div>
           <div className="footer__nav">
-            <a href="/about">about</a>
-            <a href="/about">SERVICES</a>
-            <a href="/about">TECHNOLOGIES</a>
-            <a href="/about">HOW TO</a>
-            <a href="/about">JOIN HYDRA</a>
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={700}
+              offset={-50}
+            >
+              About
+            </Link>
+
+            <Link
+              activeClass="active"
+              to="services"
+              spy={true}
+              smooth={true}
+              duration={700}
+              offset={-50}
+            >
+              Services
+            </Link>
+
+            <Link
+              activeClass="active"
+              to="techno"
+              spy={true}
+              smooth={true}
+              duration={700}
+              offset={-50}
+            >
+              Technologies
+            </Link>
+
+            <Link
+              activeClass="active"
+              to="circles"
+              spy={true}
+              smooth={true}
+              duration={700}
+              offset={-350}
+            >
+              How To
+            </Link>
           </div>
           <div className="footer__line">
-            <img src={footerLine} alt="background decoration" style={{width :"auto", height : "196px"}} />
+            <img
+              src={footerLine}
+              alt="background decoration"
+              style={{ width: "auto", height: "196px" }}
+            />
           </div>
           <div className="footer__links">
-            <a href="/about">f.a.q</a>
-            <a href="/about">sitemap</a>
-            <a href="/about">conditions</a>
-            <a href="/about">licenses</a>
+            <a href="/f.a.q">f.a.q</a>
+            <a href="/sitemap">sitemap</a>
+            <a href="/conditions">conditions</a>
+            <a href="/licenses">licenses</a>
           </div>
           <div className="footer__line">
-            <img src={footerLine} alt="background decoration" style={{width :"auto", height : "196px"}} />
+            <img
+              src={footerLine}
+              alt="background decoration"
+              style={{ width: "auto", height: "196px" }}
+            />
           </div>
           <div className="social">
             <div className="social__title">
@@ -77,7 +128,11 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer__line_row">
-          <img src={footerLine2} alt="background decoration" style={{width:"100%", height:"auto"}} />
+          <img
+            src={footerLine2}
+            alt="background decoration"
+            style={{ width: "100%", height: "auto" }}
+          />
         </div>
         <div className="copyright">
           <p>

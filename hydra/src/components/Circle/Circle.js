@@ -1,5 +1,5 @@
 import React from "react";
-import { Element } from 'react-scroll';
+import { Element } from "react-scroll";
 import "./Circle.scss";
 import circleLine from "./../../img/lines/circleLine.webp";
 
@@ -7,8 +7,8 @@ import SwiperCircles from "./../Swiper/SwiperCircles.js";
 
 export default function Circle() {
   return (
-    <Element name="circles" className="element">
-      <section className="steps">
+    <section className="steps">
+      <Element name="how_to">
         <div className="container-wrapper">
           <SwiperCircles />
           <div className="circleLine">
@@ -49,7 +49,7 @@ export default function Circle() {
             </div>
           </div>
         </div>
-      </section>
-    </Element>
+      </Element>
+    </section>
   );
 }

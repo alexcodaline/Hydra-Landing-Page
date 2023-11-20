@@ -26,6 +26,7 @@
     text-transform: uppercase;
     font: var(--tech-font-text);
     transition: all 0.3s ease;
+    cursor: pointer;
     &:hover {
       color: #c0b7e8;
       transform: scale(1.1);

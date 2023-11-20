@@ -9,8 +9,9 @@ import line2 from "./../../img/lines/lineAbout2.webp";
 
 export default function About() {
   return (
-    <Element name="about" className="element">
+    
       <section className="about">
+        <Element name="about" className="element">
         <div className="container-wrapper">
           <div className="about__content">
             <div className="intro">
@@ -95,7 +96,8 @@ export default function About() {
             </div>
           </div>
         </div>
+        </Element>
       </section>
-    </Element>
+    
   );
 }

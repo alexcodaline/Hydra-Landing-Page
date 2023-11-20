@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import logo from "./../../img/logo/logo.webp";
 import logoName from "./../../img/logo/logoName.webp";
 import { ReactComponent as Icon } from "./menuIcon.svg";
 import "./Header.scss";
-import { Link } from "react-scroll";
+
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,7 +73,7 @@ export default function Header() {
                 <li>
                   <Link
                     activeClass="active"
-                    to="circles"
+                    to="how_to"
                     spy={true}
                     smooth={true}
                     duration={700}

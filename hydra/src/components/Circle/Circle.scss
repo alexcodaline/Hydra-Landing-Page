@@ -89,6 +89,7 @@
     }
     .swiper_circle_container {
       display: flex;
+      width: 100%;
       justify-content: center;
       align-items: center;
       position: relative;
@@ -112,12 +113,9 @@
       span {
         padding: 41px 46px;
         background: linear-gradient(251deg, #c0b7e8 12.87%, #8176af 89.33%);
-        font-size: 64px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
         color: #343045;
         border-radius: 50%;
+        font: var(--circle-font-numb);
         box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.13);
       }
     }
@@ -129,11 +127,83 @@
       position: relative;
       span {
         color: #fff;
-        text-align: center;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+        text-align: center; 
+        font: var(--contacts-font);
+      }
+    }
+  }
+  .swiper-btn-next-circle,
+  .swiper-btn-prev-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+    box-shadow: 0 0 0 10px rgba(14, 14, 14, 0.32);
+    position: absolute;
+    top: 85%;
+    transform: translateY(-50%);
+    z-index: 999;
+  }
+  .swiper-btn-next-circle {
+    right: 3%;
+  }
+  .swiper-btn-prev-circle {
+    left: 3%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .steps {
+    margin-bottom: 35px;
+    padding: 0;
+    margin-top: 20px;
+    .circleLine,
+    .circle-container {
+      display: none;
+    }
+    .swiper_circle_container {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+  }
+
+  .swiper_circle_items {
+    display: flex;
+   margin-top: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    position: relative;
+    margin-top: 20px;
+    .numb {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      span {
+        padding: 41px 46px;
+        background: linear-gradient(251deg, #c0b7e8 12.87%, #8176af 89.33%);
+        color: #343045;
+        border-radius: 50%;
+        font: var(--circle-font-numb);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.13);
+      }
+    }
+    .circle_text_desc {
+      display: flex;
+      width: 60%;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      span {
+        color: #fff;
+        text-align: center; 
+        font: var(--contacts-font);
       }
     }
   }

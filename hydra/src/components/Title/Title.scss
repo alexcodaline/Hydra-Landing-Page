@@ -342,3 +342,117 @@
     z-index: 99;
   }
 }
+// styles
+@media (min-width: 768px) and (max-width: 1024px) {
+  .title-text {
+    order: 1;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    width: 50%;
+    font: var(--about-font-large);
+    .line {
+      display: none;
+    }
+    span {
+      color: linear-gradient(92deg, #c0b7e8 -1.02%, #8176af 36.25%);
+
+      span {
+        font-size: 25px;
+        color: #fff;
+        span {
+          font-size: 30px;
+          color: linear-gradient(92deg, #c0b7e8 -1.02%, #8176af 36.25%);
+        }
+      }
+    }
+    p {
+      display: none;
+    }
+  }
+  .title-img {
+    position: relative;
+    order: 1;
+    margin-top: 0;
+    position: relative;
+    .woman {
+      z-index: 1;
+      position: relative;
+      img {
+        width: 95%;
+        height: 277px;
+        box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.13);
+        border-radius: 100px 100px 100px 240px;
+      }
+    }
+    .title-lines {
+      width: 100%;
+      display: flex;
+      img {
+        top: -25%;
+        left: -6%;
+        width: 100%;
+        height: 190%;
+      }
+      img:nth-child(2) {
+        top: -20%;
+        left: 30%;
+        width: 80%;
+        height: 190%;
+      }
+      img:nth-child(3) {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        width: 80%;
+        height: 150%;
+        transform: rotate(35deg);
+      }
+      z-index: 0;
+    }
+  }
+  .arrow {
+    display: none;
+  }
+  .title-button {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contacts {
+    height: 120px;
+  }
+  .location,
+  .phone,
+  .email {
+    justify-content: space-around;
+    align-items: center;
+    a {
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      &:hover {
+        color: #c0b7e8;
+        transform: scale(1.1);
+      }
+    }
+  }
+  
+  .contact_info {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    .info {
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+    }
+    span {
+      font: var(--tech-font-text);
+    }
+    p {
+      display: none;
+    }
+  }
+}

@@ -8,9 +8,10 @@ import SwiperCircles from "./../Swiper/SwiperCircles.js";
 export default function Circle() {
   return (
     <section className="steps">
-      <Element name="how_to">
+      
         <div className="container-wrapper">
           <SwiperCircles />
+          <Element name="how_to">
           <div className="circleLine">
             <img src={circleLine} alt="background decoration" />
           </div>
@@ -48,8 +49,8 @@ export default function Circle() {
               </div>
             </div>
           </div>
+          </Element>
         </div>
-      </Element>
     </section>
   );
 }

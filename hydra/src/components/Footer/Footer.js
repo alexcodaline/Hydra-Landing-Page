@@ -69,7 +69,7 @@ export default function Footer() {
 
             <Link
               activeClass="active"
-              to="circles"
+              to="how_to"
               spy={true}
               smooth={true}
               duration={700}

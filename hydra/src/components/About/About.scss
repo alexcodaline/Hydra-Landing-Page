@@ -241,7 +241,112 @@
     justify-content: center;
     a {
       font: var(--btn-font);
-      font-size: 14px;
+    }
+  }
+  .context {
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    .context-title {
+      text-align: center;
+      span {
+        font: var(--about--font-bold-media);
+      }
+      p {
+        font: var(--about--font-light-media);
+      }
+    }
+  }
+  .arrow-context {
+    display: none;
+  }
+  .context_text_hydra {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin-top: 60px;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      padding-top: 0;
+    }
+    .intro_text {
+      display: none;
+    }
+    .intro-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      span {
+        font: var(--about--font-bold-media);
+      }
+      p {
+        font: var(--about--font-light-media);
+      }
+      .arrow {
+        display: none;
+      }
+    }
+  }
+  .about-vr {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 38px;
+  }
+  .man {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: max-content;
+    img {
+      border-radius: 140px 50px;
+      box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.13);
+      width: 336px;
+      height: 358px;
+    }
+  }
+
+  .about-desc {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 0;
+    .about-title {
+      display: none;
+    }
+    .desk {
+      width: 100%;
+      height: max-content;
+      margin: 0;
+      padding: 0 5%;
+      font: var(--about-font-text-media);
+    }
+  }
+  .lines {
+    display: none;
+  }
+  .about-btn {
+    margin-top: 30px;
+    justify-content: center;
+    a {
+      font: var(--btn-font);
     }
   }
   .context {

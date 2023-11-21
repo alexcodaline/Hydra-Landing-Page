@@ -5,7 +5,6 @@ import logoName from "./../../img/logo/logoName.webp";
 import { ReactComponent as Icon } from "./menuIcon.svg";
 import "./Header.scss";
 
-
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,14 +14,20 @@ export default function Header() {
         <div className="container-wrapper">
           <div className="header__row">
             <div className="header-logo">
-              <a href="/">
+              <Link
+              to="/"
+              spy={true}
+              smooth={true}
+              duration={700}
+              offset={-50} 
+              >
                 <div className="logo">
                   <img src={logo} alt="logo" />
                 </div>
                 <div className="logoName">
                   <img src={logoName} alt="logo" />
                 </div>
-              </a>
+                </Link>
             </div>
             <button
               id="burgerBtn"
@@ -92,9 +97,9 @@ export default function Header() {
                   duration={700}
                   offset={-90}
                 >
-                  <a href="/" className="header-buttons contacts-button">
+                  <span className="header-buttons contacts-button">
                     Contact us
-                  </a>
+                  </span>
                 </Link>
                 <Link
                   to="form"
@@ -103,9 +108,7 @@ export default function Header() {
                   duration={700}
                   offset={-5}
                 >
-                  <a href="/join" className="header-buttons join-button">
-                    Join Hydra
-                  </a>
+                  <span className="header-buttons join-button">Join Hydra</span>
                 </Link>
               </div>
             </nav>
